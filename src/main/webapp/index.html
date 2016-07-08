@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+  <h2>
+    samira nigrel</h2>
+  
+</head>
+<body>
+  <script>
+    function add(){
+  var n1=document.getElementById("num1").value;
+  var n2=document.getElementById("num2").value;
+    var sum=+n1 + +n2;
+    alert(sum);
+      document.getElementById("result").innerText=sum;
+    }
+     function subt(){
+  var n1=document.getElementById("num1").value;
+  var n2=document.getElementById("num2").value;
+    var subtr=+n1 - +n2;
+    alert(subtr);
+      document.getElementById("result1").innerText=subtr;
+    }
+     function mult(){
+  var n1=document.getElementById("num1").value;
+  var n2=document.getElementById("num2").value;
+    var multi=+n1 * +n2;
+    alert(multi);
+      document.getElementById("result2").innerText=multi;
+    }
+    function divi(){
+  var n1=document.getElementById("num1").value;
+  var n2=document.getElementById("num2").value;
+    var divis=+n1 / +n2;
+    alert(divis);
+      document.getElementById("result3").innerText=divis;
+    }
+  </script>
+<form>
+  Enter Number 1:<input type="number" id="num1" required>
+   Enter Number 2:<input type="number" id="num2" required>
+  <input type="button" value="add" onclick="add();">
+  <div id="result"> </div>
+    <input type="button" value="sub" onclick="subt();">  
+   <div id="result1"> </div>
+    <input type="button" value="mul" onclick="mult();">  
+ <div id="result2"> </div>
+ <input type="button" value="div" onclick="divi();">  
+ <div id="result3"> </div>
+  </form>
+</body>
+</html>
